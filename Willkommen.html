@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js"></script>
+    <!----    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/addons/p5.sound.min.js"></script>
-        <style>
+    --><style>
             div{
               background-color: #dddddd;
               width: 600px;
-              height: 300px;
+              height: 400px;
               text-align: center;
             }
         </style>
@@ -15,12 +15,23 @@
     </head>
     <body>
         <div>
-            <h1><u>--- Zeit für's Programmieren! ---</u></h1>
+            <h1 id="main"><u></u></h1>
             <br/>
             <p>Hi, und Herzlich Willkommen in unsere Progammier AG! Wir finden es toll, dass du dich für's Programmieren entschieden hast. Programmieren hat kaum Grenzen, also es ermöglicht dir fast alles mögliche zu erstellen, von Videospielen, Apps/Software, Webseiten, Programme, die Liste geht weiter. Macht euch aus das alles aber wirklich keine Angst, denn auch die absoluten Basics von Programmieren fangen babyleicht an, und man gewöhnt sich mit der Zeit daran, immer mehr neues zu entdecken und zu lernen. Und selbst die ganz einfachen Programmierfortschritte fühlen sich toll an nach ihrem Erfolg.</p>
             <br/>
             <p>Also worauf warten wir? Lasst uns gemeinsam die versteckte Welt von Programmieren entdecken - die Welt hinter jeder Website und Programm das jemals erstellt wurde...</p>
-            <script></script>
+            <script>
+                
+                let x = 0
+                let y = 0
+                
+                while(y<100){y+=1,x = Math.random(),console.log(x)}
+                if (x > 0.5){e = "é" , o = "ò"}
+                else {e = "e" , o = "o"}
+                
+                maintext = "--- Z"+e+"it für's Pr"+o+"grammi"+e+"r"+e+"n"
+                document.getElementById("main").innerHTML = maintext
+            </script>
         </div>
     </body>
 </html>
