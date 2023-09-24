@@ -1,1 +1,40 @@
-Hi
+<!DOCTYPE html>
+<html>
+    <head>
+    <!----    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/addons/p5.sound.min.js"></script>
+    --><style>
+            div{
+              background-color: aliceblue;
+            }
+            html{
+              background-color: aliceblue;
+            }
+            textarea{
+              height: 20px;
+            }
+        </style>
+    
+    </head>
+    <body>
+        <center><div>
+            <script>
+                function reg(){
+                    var input = document.getElementById('input').value;
+                    var link = ""
+                    if (input == "ag.prog.ag"){link = "Access granted! You may proceed by clicking on this link."}
+                    else {alert("Incorrect Password")}
+                    document.getElementById('link').innerHTML = link;
+                }
+                
+            </script>
+            <p>Password:</p><textarea id="input"></textarea>
+            <br/>
+            <button onclick=reg()>Submit</button>
+            <br/><br/><br/>
+            <a href="https://blaze-codes.github.io/Programmier_AG/" id="link"></a>
+        </div></center>
+        
+        
+    </body>
+</html>
