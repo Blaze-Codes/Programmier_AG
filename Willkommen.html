@@ -5,11 +5,16 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/addons/p5.sound.min.js"></script>
     --><style>
             div{
-              background-color: #dddddd;
+              background-color: #00ff00;
               width: 600px;
               height: 400px;
               text-align: center;
               font-family: "Consolas";
+              color: red;
+              justify-tracks: center;
+            }
+            html{
+                background-color: blue;
             }
         </style>
     
@@ -18,7 +23,7 @@
         <div>
             <u><h1 id="main"></h1></u>
             <br/>
-            <p>Hi, und Herzlich Willkommen in unsere Progammier AG! Wir finden es toll, dass du dich für's Programmieren entschieden hast. Programmieren hat kaum Grenzen, also es ermöglicht dir fast alles mögliche zu erstellen, von Videospielen, Apps/Software, Webseiten, Programme, die Liste geht weiter. Macht euch aus das alles aber wirklich keine Angst, denn auch die absoluten Basics von Programmieren fangen babyleicht an, und man gewöhnt sich mit der Zeit daran, immer mehr neues zu entdecken und zu lernen. Und selbst die ganz einfachen Programmierfortschritte fühlen sich toll an nach ihrem Erfolg.</p>
+            <p>Hi, und Herzlich Willkommen in unsere Progammier AG! Wir finden es toll, dass ihr euch für's Programmieren entschieden habt. Programmieren hat kaum Grenzen, also es ermöglicht euch fast alles mögliche zu erstellen, von Videospielen, Apps/Software, Webseiten, Programme, die Liste geht weiter. Und selbst die ganz einfachen Programmierfortschritte fühlen sich toll an nach ihrem Erfolg.</p>
             <br/>
             <p>Also worauf warten wir? Lasst uns gemeinsam die versteckte Welt von Programmieren entdecken - die Welt hinter jeder Website und Programm das jemals erstellt wurde...</p>
             <script>
@@ -58,7 +63,7 @@
                                 } else if (zufallszahl4 > 7) {
                                     u="ū";
                                 } else
-                                    {e2="û";}
+                                    {u="û";}
                                     const zufallszahl5 = Math.floor(Math.random() * 9) + 1;
                                 if (zufallszahl5 > 2 && zufallszahl5 < 6) {
                                     e2="e";
@@ -78,6 +83,7 @@
                     
                         maintext = "--- Z"+e1+"it z"+u+" Pr"+o+"gr"+a+"mmi"+e2+"r"+e3+"n! ---"
                     document.getElementById("main").innerHTML = maintext
+                        
                 
                 }
                 
