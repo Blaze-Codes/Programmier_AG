@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <!----    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/addons/p5.sound.min.js"></script>
+    --><style>
+            div{
+              background-color: #00ff00;
+              width: 600px;
+              height: 400px;
+              text-align: center;
+              font-family: "Consolas";
+              color: red;
+              justify-tracks: center;
+            }
+            html{
+                background-color: blue;
+            }
+        </style>
+    
+    </head>
+    <body>
+        <center><div>
+            <u><h1 id="main"></h1></u>
+            <br/>
+            <p>Hi, und Herzlich Willkommen in unsere Progammier AG! Wir finden es toll, dass ihr euch für's Programmieren entschieden habt. Programmieren hat kaum Grenzen, also es ermöglicht euch fast alles mögliche zu erstellen, von Videospielen, Apps/Software, Webseiten, Programme, die Liste geht weiter. Und selbst die ganz einfachen Programmierfortschritte fühlen sich toll an nach ihrem Erfolg.</p>
+            <br/>
+            <p>Also worauf warten wir? Lasst uns gemeinsam die versteckte Welt von Programmieren entdecken - die Welt hinter jeder Website und Programm das jemals erstellt wurde...</p>
+            <script>
+                
+                x = 0
+                //let y = 0
+                
+                //for (let x = 0; x < 50; x++)
+
+                //console.log(x)
+                
+                function zufallsgenerator() {
+                    const zufallszahl1 = Math.floor(Math.random() * 9) + 1;
+                    if (zufallszahl1 > 2 && zufallszahl1 < 6) {
+                        a="a"
+                    } else if (zufallszahl1 > 7) {
+                        a="ã"
+                    } else
+                        {a="å"}
+                        const zufallszahl2 = Math.floor(Math.random() * 9) + 1;
+                        if (zufallszahl2 > 2 && zufallszahl2 < 6) {
+                            e1="e";
+                        } else if (zufallszahl2 > 7) {
+                            e1="ë";
+                        } else
+                            {e1="ė"}
+                            const zufallszahl3 = Math.floor(Math.random() * 9) + 1;
+                            if (zufallszahl3 > 2 && zufallszahl3 < 6) {
+                                o="o";
+                            } else if (zufallszahl3 > 7) {
+                                o="ø";
+                            } else
+                                {o="õ"}
+                                const zufallszahl4 = Math.floor(Math.random() * 9) + 1;
+                                if (zufallszahl4 > 2 && zufallszahl4 < 6) {
+                                    u="u";
+                                } else if (zufallszahl4 > 7) {
+                                    u="ū";
+                                } else
+                                    {u="û";}
+                                    const zufallszahl5 = Math.floor(Math.random() * 9) + 1;
+                                if (zufallszahl5 > 2 && zufallszahl5 < 6) {
+                                    e2="e";
+                                } else if (zufallszahl5 > 7) {
+                                    e2="é";
+                                } else
+                                    {e2="è";}
+                                    const zufallszahl6 = Math.floor(Math.random() * 9) + 1;
+                                if (zufallszahl6 > 2 && zufallszahl6 < 6) {
+                                    e3="e";
+                                } else if (zufallszahl6 > 7) {
+                                    e3="ê";
+                                } else
+                                    {e3="ė";}
+                    
+                    
+                    
+                        maintext = "--- Z"+e1+"it z"+u+" Pr"+o+"gr"+a+"mmi"+e2+"r"+e3+"n! ---"
+                    document.getElementById("main").innerHTML = maintext
+                        
+                
+                }
+                
+                setInterval(zufallsgenerator, 200); // Call zufallsgenerator every second
+
+                
+            </script>
+        </div></center>
+    </body>
+</html>
